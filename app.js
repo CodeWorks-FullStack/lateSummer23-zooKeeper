@@ -187,7 +187,7 @@ setInterval(getPaid, 1000)
 // setInterval(decreaseOsloHunger, 1000)
                             // ⬆️⬆️ 2nd arg is the time between ea. interval or function call...how often do we want this to execute
 
-// NOTE setInterval is a javascript method... takes in a callback or anon fn and executes on a specified delay expressed in miliseconds
+// NOTE setInterval is a javascript method... takes in a callback or anon fn and executes on a specified interval expressed in miliseconds
 // NOTE if we invoke the fn with () it breaks the setInterval
 
 
