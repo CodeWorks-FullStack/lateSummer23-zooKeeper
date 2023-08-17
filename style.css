@@ -1,0 +1,14 @@
+.pen {
+    border: 3px dashed black;
+    min-height: 25vh;
+    user-select: none;
+}
+
+.emoji:hover {
+    cursor: pointer;
+    transform: (scale(1.02));
+}
+
+.marquee1 {
+    min-height: 20vh;
+}

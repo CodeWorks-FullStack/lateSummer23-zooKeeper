@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD' crossorigin='anonymous'>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>ZooKeeper 🦧🦒</title>
+</head>
+
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class=" bg-success">
+
+    <header class="container-fluid">
+        <section class="row bg-warning">
+            <div class="col-12 text-center">
+                <h1>Zoo Keeper 🦧🦒🦓</h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid ">
+        <section class="row bg-info">
+            <div class="col-12 text-center fs-3 pt-2">
+                <p>Paycheck: $<span id="paycheck">0</span></p>
+                <p>Bank Account: $<span id="bankAccount">0</span></p>
+            </div>
+        </section>
+
+        <section class="row ">
+            <div class="col-4 p-0 pen fs-1" id="oslo">
+                <!-- NOTE in order to get the cool scroling effect, we must have two marquee tags -->
+                <marquee behavior="alternate" direction="down" class="marquee1">
+
+                    <marquee behavior="alternate" class="marquee2">
+                        <div onclick="feedOslo()" class="emoji">
+                            🦧
+                        </div>
+                    </marquee>
+
+                </marquee>
+                <p class="bg-warning text-center mb-0" id="osloStats">Oslo | 🥰 | 100</p>
+            </div>
+            <div class="col-4 p-0 pen fs-1" id="karen">
+                <marquee behavior="alternate" direction="down" class="marquee1">
+
+                    <marquee behavior="alternate" class="marquee2">
+                        <div onclick="feedAnimal('karen')" class="emoji">
+                            🦒
+                        </div>
+                    </marquee>
+
+                </marquee>
+                <p class="bg-warning text-center mb-0" id="karenStats">Karen | 🥰 | 100</p>
+            </div>
+            <div class="col-4 p-0 pen fs-1" id="stripes">
+                <marquee behavior="alternate" direction="down" class="marquee1">
+
+                    <marquee behavior="alternate" class="marquee2">
+                        <div class="emoji" onclick="feedAnimal('stripes')">
+                            🦓
+                        </div>
+                    </marquee>
+
+                </marquee>
+                <p class="bg-warning text-center mb-0" id="stripesStats">Stripes | 🥰 | 100</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
